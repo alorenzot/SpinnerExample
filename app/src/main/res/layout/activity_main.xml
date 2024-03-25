@@ -31,18 +31,19 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="140dp"
-        android:layout_height="25dp"
+        android:layout_width="246dp"
+        android:layout_height="26dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:text="Custom Spinner"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/simple_spinner" />
 
     <Spinner
         android:id="@+id/custom_spinner"
-        android:layout_width="245dp"
-        android:layout_height="40dp"
+        android:layout_width="281dp"
+        android:layout_height="82dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView" />

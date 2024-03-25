@@ -29,7 +29,22 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public enum Sexo{
+    public enum Sexo implements Listable{
         HOMBRE,MUJER;
+
+        @Override
+        public String getDescripcion() {
+            return toString();
+        }
+
+        @Override
+        public int getIcon() {
+            return this.equals(HOMBRE)?R.drawable.masculino:R.drawable.femenino;
+        }
+
+        @Override
+        public int getImage() {
+            return this.equals(HOMBRE)?R.drawable.hombre:R.drawable.mujer;
+        }
     }
 }
